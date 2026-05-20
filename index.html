@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Contas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="btn-menu"> ☰</button>
+        <span class="carrinho-icone">🛒 <span id="contador">0</span></span>
+                <div class="menu-links">
+                    <button class="fechar-menu">X</button>
+                     <a href="#" onclick="filtrarCategoria('todos')">Início</a>
+                     <a href="#" onclick="filtrarCategoria('conta')">Contas</a>
+                     <a href="#" onclick="filtrarCategoria('gamepass')">Gamepass</a>
+                </div>
+        
+    </nav>
+<header>
+        <h1>🎮 Loja de conta e Gamepass</h1>
+            <p>Contas e Gamepass com entrega imediata</p>
+                <p>✅ 100% Seguro  ⚡ Entrega na hora  🎯 Melhor preço</p>
+                </header>
+<div class="busca">
+    <input type="text" id="input-busca" placeholder="🔍 buscar produtos">
+</div>
+
+    <main class="produtos">
+            
+                                                            
+                                                                            
+            
+    </main>
+    <div id="modal-carrinho">
+        <div class="carrinho-conteudo">
+            <div class="carrinho-header">
+                <h2>🛒carrinho</h2>
+                <button id="fechar-carrinho"> X</button>
+            </div>
+            <ul id="lista-carrinho"></ul>
+            <p id="carrinho-total">Total: R$ 0.00</p>
+            <button id="btn-pagar"> Finalizar a compra</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src= "script.js"></script>
+</body>
+</html>
+ 
